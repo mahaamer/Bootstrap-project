@@ -1,0 +1,175 @@
+/* GeneraL Styles */
+
+:root {
+    --bs-font-sans-serif: Poppins, sans-serif;
+    --bs-primary: #8490ff;
+    --bs-secondary: #62bdfc;
+    --bs-light: #f9f9ff;
+    --bs-gradient: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+
+article,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    height: 1000px;
+    font-weight: 300px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover {
+    --bs-link-hover-color: var(var(--bs-primary));
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    --bs-gutter-x: 1.8rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.fa {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Utility classes */
+
+.text-sm {
+    font-size: 0.9rem;
+}
+
+.fs-7 {
+    font-size: 3rem;
+}
+
+.transition-colors {
+    transition: background 150ms, color 300ms;
+}
+
+
+/* components styles */
+
+.section {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-title-sm {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.section-gap {
+    padding: 120px 0;
+}
+
+.btn-primary {
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+    background: var(--bs-gradient);
+    padding: 0.7rem 1.2rem;
+}
+
+.btn-primary:hover {
+    box-shadow: 0px 20px 20px 0px rgb(132 144 255 /30%);
+}
+
+
+/* Navbar */
+
+.navbar {
+    --bs-navbar-active-color: var(--bs-primary);
+    --bs-navbar-active-color: var(--bs-black);
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: var(--bs-primary);
+}
+
+.nav-link {
+    --bs-nav-link-font-weight: 300;
+}
+
+
+/*Main  */
+
+
+/* Header */
+
+
+/*  My Services */
+
+#my-services .service:hover a,
+#my-services .service:hover svg {
+    color: var(--bs-primary);
+}
+
+
+/* footer */
+
+.footer-area {
+    background-color: #04091e;
+}
+
+.single-footer-widget h4 {
+    color: #fff !important;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.single-footer-widget .footer-social a i,
+.single-footer-widget .footer-social a .fa {
+    vertical-align: bottom;
+    color: #fff;
+}
+
+.single-footer-widget .footer-social a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
